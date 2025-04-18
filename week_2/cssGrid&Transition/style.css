@@ -1,0 +1,34 @@
+.table{
+    display: grid;
+    gap: 16px;
+    padding: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1111px) {
+    .table{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media (max-width: 555px) {
+    .table{
+        grid-template-columns: 1fr;
+    }
+    
+}
